@@ -1,0 +1,104 @@
+body {
+    color: #080808;
+    background-color: #bcd9f2;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    /* Removendo margem e padding padrão */
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: #a6c8f3;
+    color: #023a5f;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: #023a5f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #a6c8f3;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0e69cb;
+}
+
+main {
+    text-align: center;
+    margin: 0px;
+    background-color: #bcd9f2;
+}
+
+.sobre {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sobre p {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.beneficios {
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.beneficios h3 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
