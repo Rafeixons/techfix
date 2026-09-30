@@ -1,30 +1,29 @@
-const precos = {
-    formatacao: 120,
-    limpeza: 80,
-    instalacao: 50,
-    backup: 100
+function calcularOrcamento() {
+    let nome = document.getElementById("nome").value;
+    let servico = document.getElementById("servicos").value;
+    let valor = 0;
+    
+
+    if (servico === "formatacao") {
+        nomeServico = "Formatação de computador",
+        valor = 120;
+    }if( servico === "limpeza"){
+        nomeServico = "Limpeza e manutenção",
+        valor = 80;
+    }if( servico === "instalacao"){
+        nomeServico = "Instalação de programas",
+        valor = 50;
+    }if( servico === "backup"){
+        nomeServico = "Backup de arquivos",
+        valor = 100;
+    }
+
+
+
+    document.getElementById("resultado").innerHTML = 
+        "<p>Olá, "+ nome +"!</p>"+
+        "<h3>Orçamento</h3>"+
+        "<p><strong>Serviço escolhido: "+ nomeServico +"</strong></p>"+
+        "<p><strong>Valor do serviço: R$"+valor+",00</strong></p>";
+
 }
-
-const servico = document.getElementById("servico");
-const botao = document.getElementById("gerar");
-const resultado = document.getElementById("resultado");
-
-botao.addEventListener("click", () => {
-
-    const valor = precos[servico.value];
-
-    const nomeServico =
-        servico.options[servico.selectedIndex].text;
-
-    const novaSection = document.createElement("section");
-
-    novaSection.classList.add("beneficios");
-
-    novaSection.innerHTML = `
-<h3>Orçamento</h3>
-<p><strong>Serviço:</strong> ${nomeServico}</p>
-<p><strong>Valor:</strong> R$ ${valor.toFixed(2)}</p>
-`;
-
-    resultado.appendChild(novaSection);
-});

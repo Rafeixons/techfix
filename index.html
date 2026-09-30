@@ -18,15 +18,24 @@
 
     <nav>
         <a href="#inicio">Início</a>
-        <a href="#serviços">Cardápio</a>
+        <a href="#serviços">Serviços</a>
         <a href="#contato">Contato</a>
     </nav>
     <main>
         <div class="container">
+            <div class = "campo beneficios">
+                <p>Nome:</p>
+                <input id="nome">
+
+                </div>
+                </div>
+
+        
+        <div class="container">
             <div class="beneficios">
                 <h3>Orçamento de Serviços</h3>
 
-                <select name="servico" id="servico">
+                <select name="servico" id="servicos">
                     <option value="formatacao"> Formatação de computador </option>
                     <option value="limpeza">Limpeza e manutenção</option>
                     <option value="instalacao">Instalação de programas</option>
@@ -37,24 +46,19 @@
                 <br>
                 <br>
 
-                <button id="gerar">Gerar orçamento</button>
+                <button onclick="calcularOrcamento()">Gerar orçamento</button>
                  
-                <div id="resultado"></div>
-                
-
-
-
             </div>
-        </div>
+            <div id="resultado" class="beneficios campo"></div>
+        </div><br>
     </main>
 
-
-
-
-
-
-
-    <script scr="script.js"></script>
+    <footer>
+        <div id="footer">
+            <p>© 2026 TechFix Informática — Quandando do seu com excelência</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
